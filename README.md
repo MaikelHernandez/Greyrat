@@ -9,23 +9,23 @@ implementa una economía en tu servidor de discord
 //////// Proporcione EL ID de lo siguiente (Discord User-Servidor) y su TOKEN secreto en el .env///////// 
 
 
-/////// ejecutar el archivo main.js/////////
+/////// ejecutar el archivo main.js  /////////
 
 - node .
 
 
-////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////
 
 Lista de comandos:
 
 
-/balance	
+/balance	- mira la cantidad de tu dinero
 /deposito - guarda tu dinero en el banco	
 /retirar - retira dinero del banco	
 /tranferir - transfiere dinero a otros usuarios
 /leaderboard - mira a las personas mas ricas del servidor 	
 
-////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////
 • comandos de la tienda
 
 /tienda - mira los objetos que hay en venta	
@@ -33,15 +33,15 @@ Lista de comandos:
 /vender - vende un objeto de tu inventario	
 /inventario - mira los objetos que tienes en tu posesión
 
-////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////
 • comandos de recompensas
 
 /diario - Consigue una recompensa diaria
 /semanal - Consigue una recompensa semanal	
 /mensual - Consigue una recompensa mensual	
 
-/////////////////////////////////////////////////////////////////////////////////////
-• Fun commands Generic badge
+///////////////////////////////////////////////
+• comandos de apuestas
 
 /griralamoneda - Gana dinero lanzando una moneda al aire	
 /traga monendas - Gana dinero apostando en una maquina tragamonedas
