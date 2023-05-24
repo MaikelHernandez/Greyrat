@@ -42,7 +42,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
     }
 
     try {
-        // check command cooldown
+       
         let userCD;
         const cooldowns = client.cooldowns.get(command_name);
         if (cooldowns) {
@@ -65,7 +65,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
         await command.execute(interaction);
 
-        // create command cooldown
+       
         if (cooldowns) {
             userCD = cooldowns.filter((cd) => cd.userID === user.id);
             if (userCD.length === 0) {
@@ -85,14 +85,14 @@ client.on(Events.InteractionCreate, async (interaction) => {
     }
 });
 
-// Triggers to handle Keyboard Interruption or code break
+
 process.on("exit", (code) => {
     console.error(
         `\nProcess ${process.pid} has been interrupted\n` +
         `${client.user.username || "bot"}'s logging out...`
     );
 
-    // disconnecting from discord.Client and Database
+   
     client.destroy();
     bank_funcs.DB.destroy();
 
@@ -105,7 +105,7 @@ process.on("SIGINT", (signal) => {
     process.exit(0);
 });
 
-// sync commands
+
 register_commands(client.commands, false).then(() =>
     setTimeout(() => client.login(Auth.TOKEN), 3 * 1000)
 );
